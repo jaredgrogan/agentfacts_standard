@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentfacts.org/schemas/v1/agentfacts-parent-categories-v1.json",
+  "title": "AgentFacts Universal Parent Categories v1.0",
+  "description": "Core section structure for AgentFacts Universal Metadata Standard - Apache 2.0 Licensed",
+  "type": "object",
+  "required": ["core_identity", "baseline_model"],
+  "properties": {
+    "core_identity": {
+      "type": "object",
+      "description": "REQUIRED: Unique agent identification and lifecycle metadata"
+    },
+    "baseline_model": {
+      "type": "object", 
+      "description": "REQUIRED: Foundation AI model transparency"
+    },
+    "classification": {
+      "type": "object",
+      "description": "Universal categorization system - EXTENSIBLE"
+    },
+    "capabilities": {
+      "type": "object",
+      "description": "Extensible capability declarations"
+    },
+    "authentication_permissions": {
+      "type": "object",
+      "description": "Enterprise-critical authentication & dynamic permissions - EXTENSIBLE"
+    },
+    "compliance_regulatory": {
+      "type": "object",
+      "description": "Multi-jurisdictional regulatory compliance - EXTENSIBLE"
+    },
+    "performance_reputation": {
+      "type": "object",
+      "description": "Measurable quality metrics (intrinsic performance + extrinsic reputation) - EXTENSIBLE"
+    },
+    "supply_chain": {
+      "type": "object",
+      "description": "SBOM integration for supply chain transparency - EXTENSIBLE"
+    },
+    "verification": {
+      "type": "object",
+      "description": "Cryptographic trust and multi-authority verification - EXTENSIBLE"
+    },
+    "extensibility": {
+      "type": "object",
+      "description": "Future-proofing mechanisms - FULLY EXTENSIBLE"
+    }
+  },
+  "additionalProperties": true
+}
