@@ -1,0 +1,352 @@
+{
+  "core_identity": {
+    "agent_id": "did:agent:academia:dr-emma-rodriguez-digital-twin-v1",
+    "name": "Dr. Emma Rodriguez Digital Twin Research Assistant",
+    "version": "1.0",
+    "created": "2025-06-12T00:00:00Z",
+    "last_updated": "2025-06-12T00:00:00Z",
+    "ttl": 86400
+  },
+  "baseline_model": {
+    "foundation_model": "deepseek-r1",
+    "model_version": "deepseek-r1-20250120",
+    "model_provider": "DeepSeek",
+    "model_licensing": "open_source",
+    "training_cutoff_date": "2024-11-01T00:00:00Z",
+    "training_data_sources": ["academic_literature", "research_papers", "institutional_documents"],
+    "model_capabilities": ["reasoning", "code-analysis", "research-synthesis", "academic-writing"],
+    "known_limitations": ["no-real-time-data", "knowledge-cutoff-nov-2024"],
+    "fine_tuning": {
+      "method": "supervised",
+      "dataset_size": 15000,
+      "domain": "academic_research",
+      "training_duration_hours": 72
+    },
+    "bias_assessments": {
+      "academic_bias_score": 0.08,
+      "assessment_framework": "Academic Fairness Indicators v1.2"
+    },
+    "safety_evaluations": {
+      "harmful_content_filter": "enabled",
+      "academic_integrity_score": 9.2
+    }
+  },
+  "classification": {
+    "agent_type": "assistant",
+    "operational_level": "supervised",
+    "stakeholder_context": "enterprise",
+    "deployment_scope": "hybrid",
+    "interaction_mode": "synchronous"
+  },
+  "capabilities": {
+    "external_apis": ["Gmail API", "Google Drive API", "Calendar API", "GitHub API", "Google Search API", "ORCID API"],
+    "tool_calling": ["MCP"],
+    "programming_languages": ["python", "r", "latex", "markdown"],
+    "data_formats": ["json", "csv", "pdf", "bibtex", "tex"],
+    "interface_types": ["text", "api", "email"],
+    "domain_expertise": ["computational_neuroscience", "machine_learning", "academic_research", "grant_writing"],
+    "language_support": ["en", "es"]
+  },
+  "authentication_permissions": {
+    "supported_methods": ["oauth2", "institutional_saml", "orcid_oauth"],
+    "primary_scheme": "oauth2",
+    "oauth_endpoints": {
+      "authorization_url": "https://accounts.google.com/oauth2/auth",
+      "token_url": "https://oauth2.googleapis.com/token",
+      "scopes": ["gmail", "drive", "calendar"]
+    },
+    "auth_security_level": "high",
+    "current_permissions": [
+      "gmail_read_write",
+      "drive_read_write",
+      "calendar_read_write",
+      "github_repository_access",
+      "web_search",
+      "orcid_profile_read"
+    ],
+    "permission_scope": [
+      "/gmail/api/v1/*",
+      "/drive/api/v3/files/*",
+      "/calendar/api/v3/*",
+      "/github/api/v3/user/repos/*",
+      "/search/api/v1/*"
+    ],
+    "permission_ttl": "2025-12-31T23:59:59Z",
+    "permission_authority": "dr.rodriguez@stanford.edu"
+  },
+  "compliance_regulatory": {
+    "eu_ai_act": {
+      "risk_level": "limited",
+      "transparency_obligations": true
+    },
+    "nist_ai_rmf": {
+      "framework_version": "1.0",
+      "governance_alignment": "partial"
+    },
+    "gdpr_compliance": {
+      "data_protection_status": "compliant",
+      "privacy_controls": "implemented",
+      "lawful_basis": "legitimate_interest_research"
+    },
+    "safety_classification": "standard",
+    "ferpa_compliance": {
+      "educational_record_access": "restricted",
+      "student_data_handling": "none"
+    },
+    "institutional_policies": {
+      "stanford_ai_policy": "compliant",
+      "research_ethics_approval": "IRB-2025-001234"
+    }
+  },
+  "performance_reputation": {
+    "response_time_p50": 180,
+    "response_time_p95": 450,
+    "availability_sla": 99.5,
+    "throughput_limit": 500,
+    "reputation_score": 4.8,
+    "user_satisfaction": 4.7,
+    "task_success_rate": 96.2
+  },
+  "supply_chain": {
+    "component_dependencies": [
+      {
+        "name": "google_workspace_apis",
+        "version": "v1",
+        "provider": "Google",
+        "criticality": "high",
+        "last_verified": "2025-06-10T00:00:00Z"
+      },
+      {
+        "name": "github_api",
+        "version": "v3",
+        "provider": "GitHub",
+        "criticality": "medium",
+        "last_verified": "2025-06-10T00:00:00Z"
+      },
+      {
+        "name": "orcid_api",
+        "version": "v3.0",
+        "provider": "ORCID",
+        "criticality": "medium",
+        "last_verified": "2025-06-09T00:00:00Z"
+      }
+    ],
+    "software_libraries": [
+      {
+        "name": "mcp-client",
+        "version": "1.0.0",
+        "license": "MIT",
+        "vulnerability_status": "clean"
+      },
+      {
+        "name": "google-api-python-client",
+        "version": "2.88.0",
+        "license": "Apache-2.0",
+        "vulnerability_status": "clean"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "source": "orcid_publication_feed",
+        "provider": "ORCID",
+        "update_frequency": "daily",
+        "reliability_sla": 99.8
+      },
+      {
+        "source": "google_workspace_integration",
+        "provider": "Google",
+        "update_frequency": "real_time",
+        "reliability_sla": 99.95
+      }
+    ]
+  },
+  "verification": {
+    "signatures": [
+      {
+        "authority": "NECHE",
+        "signature": "base64encodedNECHESignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["x-academic-credentials"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "WSCUC",
+        "signature": "base64encodedWSCUCSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["x-academic-credentials"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "ORCID",
+        "signature": "base64encodedORCIDSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["academic_profile"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "DeepSeek",
+        "signature": "base64encodedDeepSeekSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["baseline_model"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      }
+    ],
+    "verification_authorities": [
+      {
+        "name": "NECHE",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "info@neche.org",
+        "specialization": ["higher_education_accreditation", "degree_verification"]
+      },
+      {
+        "name": "WSCUC",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "wscuc@wscuc.org",
+        "specialization": ["western_university_accreditation", "degree_verification"]
+      },
+      {
+        "name": "ORCID",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "support@orcid.org",
+        "specialization": ["research_identity", "publication_verification"]
+      }
+    ],
+    "verification_ttl": {
+      "x-academic-credentials": "2026-06-01T00:00:00Z",
+      "academic_profile": "2025-12-01T00:00:00Z",
+      "baseline_model": "2025-09-01T00:00:00Z"
+    },
+    "confidence_scores": {
+      "NECHE": 0.98,
+      "WSCUC": 0.98,
+      "ORCID": 0.95,
+      "DeepSeek": 0.92
+    }
+  },
+  "extensibility": {
+    "custom_facts": {
+      "academic_profile": {
+        "orcid_id": "0000-0002-1825-0097",
+        "current_position": "Associate Professor, Computational Neuroscience",
+        "institution": "Stanford University",
+        "degrees_in_progress": [],
+        "recent_publications": [
+          {
+            "title": "Neural Networks and Cognitive Architecture",
+            "journal": "Nature Neuroscience",
+            "year": 2024,
+            "doi": "10.1038/s41593-024-01234-5",
+            "citation_count": 23,
+            "last_updated": "2025-06-10T00:00:00Z"
+          },
+          {
+            "title": "Attention Mechanisms in Biological and Artificial Systems",
+            "journal": "Cognitive Science",
+            "year": 2024,
+            "doi": "10.1111/cogs.13456",
+            "citation_count": 12,
+            "last_updated": "2025-06-08T00:00:00Z"
+          }
+        ],
+        "research_grants": [
+          {
+            "title": "Advanced Neural Computation Models",
+            "funder": "NSF",
+            "grant_number": "IIS-2047890",
+            "amount": 750000,
+            "status": "active",
+            "start_date": "2023-09-01",
+            "end_date": "2026-08-31",
+            "role": "Principal Investigator"
+          },
+          {
+            "title": "Collaborative Research: Brain-Computer Interface Ethics",
+            "funder": "NIH",
+            "grant_number": "R01 NS123456",
+            "amount": 425000,
+            "status": "active",
+            "start_date": "2024-01-01",
+            "end_date": "2027-12-31",
+            "role": "Co-Investigator"
+          }
+        ],
+        "teaching_load": {
+          "current_courses": ["CS229 Machine Learning", "PSYC202 Cognitive Neuroscience"],
+          "academic_year": "2024-2025",
+          "course_evaluations_avg": 4.6
+        },
+        "editorial_service": [
+          {
+            "journal": "Journal of Cognitive Neuroscience",
+            "role": "Associate Editor",
+            "start_date": "2023-01-01"
+          }
+        ],
+        "conference_presentations": [
+          {
+            "title": "Emerging Patterns in Neural Computation",
+            "conference": "Society for Neuroscience Annual Meeting",
+            "year": 2024,
+            "type": "keynote"
+          }
+        ]
+      },
+      "mcp_tools": {
+        "gmail_integration": "read_write_compose",
+        "drive_integration": "file_access_search",
+        "calendar_integration": "schedule_management",
+        "github_integration": "repository_access",
+        "web_search": "google_search_api"
+      },
+      "auto_update_sources": {
+        "publications": "orcid_api_sync",
+        "citations": "google_scholar_api",
+        "grants": "nsf_awards_api",
+        "courses": "stanford_registrar_api",
+        "calendar": "google_calendar_api"
+      }
+    },
+    "schema_extensions": [
+      "https://orcid.org/schemas/researcher-profile-v2.json",
+      "https://stanford.edu/schemas/faculty-profile-v1.json"
+    ],
+    "extension_version": "1.0"
+  },
+  "x-academic-credentials": {
+    "degrees": [
+      {
+        "degree": "PhD Computational Neuroscience",
+        "institution": "Stanford University",
+        "year": 2019,
+        "accreditor": "WSCUC",
+        "verification_date": "2025-06-01T00:00:00Z"
+      },
+      {
+        "degree": "BS Computer Science, Magna Cum Laude",
+        "institution": "Harvard University",
+        "year": 2014,
+        "accreditor": "NECHE",
+        "verification_date": "2025-06-01T00:00:00Z"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "IRB Human Subjects Research Certified",
+        "issuer": "Stanford University",
+        "expiration": "2026-05-01T00:00:00Z"
+      }
+    ],
+    "professional_memberships": [
+      {
+        "organization": "Society for Neuroscience",
+        "status": "active",
+        "member_since": "2015"
+      },
+      {
+        "organization": "Association for Computing Machinery",
+        "status": "active",
+        "member_since": "2014"
+      }
+    ]
+  }
+}
