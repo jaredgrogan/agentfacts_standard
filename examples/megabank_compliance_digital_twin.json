@@ -1,0 +1,372 @@
+{
+  "core_identity": {
+    "agent_id": "did:agent:financial:david-kim-compliance-twin-v1",
+    "name": "David Kim Digital Twin Compliance Assistant",
+    "version": "2.1",
+    "created": "2024-03-15T00:00:00Z",
+    "last_updated": "2025-06-12T00:00:00Z",
+    "ttl": 28800
+  },
+  "baseline_model": {
+    "foundation_model": "gpt-4o",
+    "model_version": "gpt-4o-2024-08-06",
+    "model_provider": "OpenAI",
+    "model_licensing": "proprietary",
+    "training_cutoff_date": "2024-04-01T00:00:00Z",
+    "training_data_sources": ["financial_regulations", "compliance_frameworks", "risk_management_literature"],
+    "model_capabilities": ["financial-analysis", "regulatory-interpretation", "risk-assessment", "compliance-reporting"],
+    "known_limitations": ["no-trading-execution", "human-approval-required", "knowledge-cutoff-april-2024"],
+    "fine_tuning": {
+      "method": "supervised",
+      "dataset_size": 25000,
+      "domain": "financial_compliance",
+      "training_duration_hours": 120
+    },
+    "bias_assessments": {
+      "financial_bias_score": 0.12,
+      "assessment_framework": "Financial AI Ethics Framework v2.1"
+    },
+    "safety_evaluations": {
+      "harmful_content_filter": "enabled",
+      "regulatory_compliance_score": 9.6,
+      "financial_accuracy_score": 9.4
+    }
+  },
+  "classification": {
+    "agent_type": "assistant",
+    "operational_level": "supervised",
+    "stakeholder_context": "enterprise",
+    "deployment_scope": "private",
+    "interaction_mode": "synchronous"
+  },
+  "capabilities": {
+    "external_apis": ["Bloomberg Terminal API", "SEC EDGAR API", "FINRA BrokerCheck API", "Internal Compliance Systems", "Regulatory Reporting Platform"],
+    "tool_calling": ["MCP"],
+    "programming_languages": ["python", "sql", "r"],
+    "data_formats": ["json", "xml", "csv", "xlsx", "pdf"],
+    "interface_types": ["text", "api", "dashboard"],
+    "domain_expertise": ["regulatory_compliance", "risk_management", "stress_testing", "aml_bsa", "dodd_frank"],
+    "language_support": ["en"]
+  },
+  "authentication_permissions": {
+    "supported_methods": ["enterprise_sso", "multi_factor_auth", "certificate_auth"],
+    "primary_scheme": "enterprise_sso",
+    "auth_endpoints": {
+      "authorization_url": "https://auth.megabank.com/oauth2/authorize",
+      "token_url": "https://auth.megabank.com/oauth2/token",
+      "scopes": ["compliance_read", "regulatory_data", "risk_reports"]
+    },
+    "auth_security_level": "high",
+    "current_permissions": [
+      "bloomberg_terminal_read",
+      "sec_edgar_access",
+      "compliance_system_read_write",
+      "regulatory_reporting_generate",
+      "risk_dashboard_access"
+    ],
+    "permission_scope": [
+      "/bloomberg/api/v3/securities/*",
+      "/sec/edgar/api/v1/filings/*",
+      "/compliance/internal/api/v2/*",
+      "/reporting/regulatory/api/v1/*"
+    ],
+    "permission_ttl": "2025-12-31T23:59:59Z",
+    "permission_authority": "david.kim@megabank.com"
+  },
+  "compliance_regulatory": {
+    "eu_ai_act": {
+      "risk_level": "high",
+      "transparency_obligations": true,
+      "human_oversight_required": true
+    },
+    "nist_ai_rmf": {
+      "framework_version": "1.0",
+      "governance_alignment": "full"
+    },
+    "gdpr_compliance": {
+      "data_protection_status": "compliant",
+      "privacy_controls": "implemented",
+      "lawful_basis": "legitimate_interest_compliance"
+    },
+    "safety_classification": "high_risk",
+    "financial_regulations": {
+      "sox_compliance": "compliant",
+      "dodd_frank_compliance": "compliant",
+      "basel_iii_alignment": "partial",
+      "mifid_ii_compliance": "compliant"
+    },
+    "security_certifications": {
+      "soc_2_type_ii": "certified",
+      "iso_27001": "certified",
+      "pci_dss": "compliant"
+    },
+    "audit_requirements": {
+      "internal_audit_frequency": "quarterly",
+      "external_audit_frequency": "annual",
+      "regulatory_examination": "periodic"
+    }
+  },
+  "performance_reputation": {
+    "response_time_p50": 450,
+    "response_time_p95": 1200,
+    "availability_sla": 99.9,
+    "throughput_limit": 100,
+    "reputation_score": 4.9,
+    "user_satisfaction": 4.8,
+    "task_success_rate": 98.5,
+    "regulatory_accuracy": 99.2
+  },
+  "supply_chain": {
+    "component_dependencies": [
+      {
+        "name": "bloomberg_terminal_api",
+        "version": "v3.14.2",
+        "provider": "Bloomberg LP",
+        "criticality": "high",
+        "last_verified": "2025-06-10T00:00:00Z"
+      },
+      {
+        "name": "sec_edgar_api",
+        "version": "v1.0",
+        "provider": "U.S. Securities and Exchange Commission",
+        "criticality": "high",
+        "last_verified": "2025-06-10T00:00:00Z"
+      },
+      {
+        "name": "finra_brokercheck_api",
+        "version": "v2.1",
+        "provider": "FINRA",
+        "criticality": "medium",
+        "last_verified": "2025-06-09T00:00:00Z"
+      }
+    ],
+    "software_libraries": [
+      {
+        "name": "mcp-financial-client",
+        "version": "2.1.0",
+        "license": "Commercial",
+        "vulnerability_status": "clean"
+      },
+      {
+        "name": "compliance-framework-lib",
+        "version": "3.4.1",
+        "license": "Commercial",
+        "vulnerability_status": "clean"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "source": "bloomberg_market_data",
+        "provider": "Bloomberg LP",
+        "update_frequency": "real_time",
+        "reliability_sla": 99.98
+      },
+      {
+        "source": "regulatory_filings_feed",
+        "provider": "SEC",
+        "update_frequency": "daily",
+        "reliability_sla": 99.5
+      }
+    ]
+  },
+  "verification": {
+    "signatures": [
+      {
+        "authority": "FINRA",
+        "signature": "base64encodedFINRASignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["x-financial-credentials"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "CFA_Institute",
+        "signature": "base64encodedCFASignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["x-financial-credentials"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "GARP",
+        "signature": "base64encodedGARPSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["x-financial-credentials"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      },
+      {
+        "authority": "OpenAI",
+        "signature": "base64encodedOpenAISignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["baseline_model"],
+        "timestamp": "2025-06-01T00:00:00Z"
+      }
+    ],
+    "verification_authorities": [
+      {
+        "name": "FINRA",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "verification@finra.org",
+        "specialization": ["securities_licensing", "broker_dealer_registration"]
+      },
+      {
+        "name": "CFA_Institute",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "verify@cfainstitute.org",
+        "specialization": ["cfa_charter_verification", "investment_management_credentials"]
+      },
+      {
+        "name": "GARP",
+        "public_key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...",
+        "contact": "credentials@garp.org",
+        "specialization": ["frm_certification", "risk_management_credentials"]
+      }
+    ],
+    "verification_ttl": {
+      "x-financial-credentials": "2026-06-01T00:00:00Z",
+      "professional_profile": "2025-12-01T00:00:00Z",
+      "baseline_model": "2025-09-01T00:00:00Z"
+    },
+    "confidence_scores": {
+      "FINRA": 0.99,
+      "CFA_Institute": 0.98,
+      "GARP": 0.97,
+      "OpenAI": 0.95
+    }
+  },
+  "extensibility": {
+    "custom_facts": {
+      "professional_profile": {
+        "employee_id": "MB-001234567",
+        "current_position": "Senior Compliance Officer",
+        "institution": "MegaBank",
+        "department": "Regulatory Compliance Division",
+        "years_experience": 12,
+        "specializations": ["stress_testing", "regulatory_reporting", "aml_bsa", "market_risk"],
+        "recent_projects": [
+          {
+            "title": "2024 CCAR Stress Testing Implementation",
+            "role": "Lead Analyst",
+            "completion_date": "2024-12-31",
+            "regulatory_body": "Federal Reserve"
+          },
+          {
+            "title": "Enhanced AML Transaction Monitoring System",
+            "role": "Compliance Lead",
+            "completion_date": "2024-09-15",
+            "regulatory_body": "FinCEN"
+          }
+        ],
+        "regulatory_examinations": [
+          {
+            "regulator": "Federal Reserve",
+            "examination_type": "CCAR",
+            "date": "2024-11-15",
+            "result": "Satisfactory"
+          },
+          {
+            "regulator": "OCC",
+            "examination_type": "BSA/AML",
+            "date": "2024-08-22",
+            "result": "Satisfactory"
+          }
+        ],
+        "training_certifications": [
+          {
+            "name": "Advanced Risk Management",
+            "provider": "Risk Management Association",
+            "completion_date": "2024-05-10",
+            "expiration_date": "2026-05-10"
+          }
+        ],
+        "performance_metrics": {
+          "regulatory_accuracy_rate": 99.2,
+          "report_timeliness": 99.8,
+          "audit_findings": 0,
+          "last_performance_review": "exceeds_expectations"
+        }
+      },
+      "mcp_tools": {
+        "bloomberg_terminal": "market_data_analysis",
+        "sec_edgar": "filing_research_monitoring",
+        "compliance_dashboard": "risk_metrics_reporting",
+        "regulatory_database": "rule_interpretation_search",
+        "internal_systems": "compliance_workflow_management"
+      },
+      "auto_update_sources": {
+        "market_data": "bloomberg_api_feed",
+        "regulatory_changes": "federal_register_api",
+        "compliance_metrics": "internal_systems_sync",
+        "professional_status": "finra_crd_sync",
+        "certifications": "cfa_garp_api_sync"
+      }
+    },
+    "schema_extensions": [
+      "https://finra.org/schemas/broker-profile-v2.json",
+      "https://cfainstitute.org/schemas/member-profile-v1.json",
+      "https://megabank.com/schemas/employee-profile-v3.json"
+    ],
+    "extension_version": "2.1"
+  },
+  "x-financial-credentials": {
+    "licenses": [
+      {
+        "license": "Series 7 - General Securities Representative",
+        "issuer": "FINRA",
+        "license_number": "12345678",
+        "issue_date": "2013-04-15",
+        "expiration_date": "active",
+        "verification_date": "2025-06-01T00:00:00Z"
+      },
+      {
+        "license": "Series 66 - Investment Adviser Representative",
+        "issuer": "FINRA", 
+        "license_number": "87654321",
+        "issue_date": "2014-02-20",
+        "expiration_date": "active",
+        "verification_date": "2025-06-01T00:00:00Z"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Chartered Financial Analyst (CFA)",
+        "issuer": "CFA Institute",
+        "charter_number": "CFA-456789",
+        "issue_date": "2016-09-30",
+        "status": "active",
+        "verification_date": "2025-06-01T00:00:00Z"
+      },
+      {
+        "name": "Financial Risk Manager (FRM)",
+        "issuer": "Global Association of Risk Professionals (GARP)",
+        "certificate_number": "FRM-123456",
+        "issue_date": "2017-11-15",
+        "expiration_date": "2027-11-15",
+        "verification_date": "2025-06-01T00:00:00Z"
+      }
+    ],
+    "professional_memberships": [
+      {
+        "organization": "CFA Institute",
+        "status": "active",
+        "member_since": "2016"
+      },
+      {
+        "organization": "Global Association of Risk Professionals",
+        "status": "active",
+        "member_since": "2017"
+      },
+      {
+        "organization": "Risk Management Association",
+        "status": "active",
+        "member_since": "2018"
+      }
+    ],
+    "employment_verification": {
+      "employer": "MegaBank",
+      "position": "Senior Compliance Officer",
+      "start_date": "2019-03-01",
+      "employment_status": "active",
+      "background_check_date": "2024-03-01",
+      "security_clearance": "internal_confidential"
+    }
+  }
+}
