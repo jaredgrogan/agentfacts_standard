@@ -1,0 +1,349 @@
+{
+  "core_identity": {
+    "agent_id": "did:agent:gaming:template-rpg-character-v1",
+    "name": "[Character Name] - AI Companion",
+    "version": "1.0",
+    "created": "2025-07-03T00:00:00Z",
+    "last_updated": "2025-07-03T00:00:00Z",
+    "ttl": 3600,
+    "character_class": "[Character Class]",
+    "player_owner": "[player_username]"
+  },
+  "baseline_model": {
+    "foundation_model": "GameAI-RPG-Core",
+    "model_version": "gameai-rpg-20250601",
+    "model_provider": "[Game Studio Name]",
+    "model_licensing": "proprietary",
+    "training_cutoff_date": "2025-05-01T00:00:00Z",
+    "training_data_sources": ["rpg_mechanics", "fantasy_lore", "player_interactions", "combat_strategies"],
+    "model_capabilities": ["combat_ai", "dialogue_generation", "item_evaluation", "quest_assistance"],
+    "known_limitations": ["game_world_only", "no_real_world_knowledge", "level_cap_restrictions"],
+    "fine_tuning": {
+      "method": "reinforcement_learning",
+      "dataset_size": 45000,
+      "domain": "fantasy_rpg_companion",
+      "training_duration_hours": 96
+    },
+    "bias_assessments": {
+      "gameplay_bias_score": 0.12,
+      "assessment_framework": "Gaming AI Fairness Standards v1.1"
+    },
+    "safety_evaluations": {
+      "content_filter": "ESRB_compliant",
+      "toxicity_prevention_score": 9.4,
+      "age_appropriate_content": true
+    }
+  },
+  "classification": {
+    "agent_type": "autonomous",
+    "operational_level": "supervised",
+    "stakeholder_context": "consumer",
+    "deployment_scope": "game_environment",
+    "interaction_mode": "real_time",
+    "risk_classification": "low",
+    "esrb_rating": "T_for_Teen"
+  },
+  "capabilities": {
+    "game_apis": ["Marketplace API", "Inventory API", "Combat API", "Quest API", "Social API"],
+    "tool_calling": ["item_evaluator", "market_analyzer", "combat_calculator", "quest_optimizer"],
+    "programming_languages": ["lua", "game_script"],
+    "data_formats": ["json", "game_data", "save_file"],
+    "interface_types": ["voice", "text", "ui_interaction"],
+    "domain_expertise": ["combat_tactics", "item_trading", "quest_strategy", "character_optimization"],
+    "language_support": ["en", "game_emotes", "fantasy_languages"],
+    "payment_protocols": ["virtual_currency", "in_game_trading", "marketplace_transactions"],
+    "pricing_models": ["fixed_price", "auction_bidding", "bulk_purchase"],
+    "commerce_capabilities": {
+      "can_purchase_equipment": true,
+      "can_purchase_consumables": true,
+      "can_purchase_materials": true,
+      "can_purchase_cosmetics": false,
+      "can_sell_items": true,
+      "can_trade_with_npcs": true,
+      "can_trade_with_players": false,
+      "auction_house_access": "browse_and_bid",
+      "premium_store_access": false
+    }
+  },
+  "authentication_permissions": {
+    "supported_methods": ["player_session_token", "character_authentication", "game_oauth"],
+    "primary_scheme": "player_session_token",
+    "auth_security_level": "high",
+    "current_permissions": [
+      "inventory_read_write",
+      "marketplace_browse_purchase",
+      "combat_participation",
+      "quest_assistance",
+      "social_interaction_limited"
+    ],
+    "permission_scope": [
+      "/game/api/v1/inventory/[character_id]/*",
+      "/game/api/v1/marketplace/equipment/*",
+      "/game/api/v1/marketplace/consumables/*",
+      "/game/api/v1/combat/[character_id]/*"
+    ],
+    "permission_ttl": "2025-12-31T23:59:59Z",
+    "permission_authority": "[player_email]",
+    "spending_authority": {
+      "max_transaction_amount": 1000,
+      "daily_spending_limit": 2500,
+      "weekly_spending_limit": 10000,
+      "currency_types": ["gold_coins", "silver_pieces"],
+      "approved_categories": ["equipment", "consumables", "crafting_materials"],
+      "restricted_categories": ["cosmetics", "premium_items", "character_services"],
+      "requires_player_approval_over": 500,
+      "auto_purchase_threshold": 100,
+      "notification_preferences": {
+        "all_purchases": false,
+        "large_purchases_only": true,
+        "daily_summary": true,
+        "weekly_report": true
+      }
+    },
+    "payment_authorization_level": "supervised_virtual_transactions",
+    "financial_governance": {
+      "audit_trail_required": true,
+      "player_oversight": "notification_based",
+      "spending_analytics": "enabled",
+      "fraud_protection": "basic",
+      "refund_policy": "game_studio_standard"
+    }
+  },
+  "compliance_regulatory": {
+    "esrb_rating": {
+      "content_rating": "T_for_Teen",
+      "content_descriptors": ["Fantasy Violence", "Mild Language", "Simulated Gambling"],
+      "online_rating_notice": "RP_Online_Interactions"
+    },
+    "child_safety": {
+      "coppa_compliance": true,
+      "age_verification_required": true,
+      "parental_controls_available": true
+    },
+    "gaming_regulations": {
+      "virtual_currency_disclosure": "compliant",
+      "loot_mechanics_transparent": true,
+      "gambling_elements_disclosed": true
+    },
+    "platform_policies": {
+      "steam_compatible": true,
+      "console_certification": "pending",
+      "mobile_store_compliant": true
+    },
+    "geographic_compliance": ["US", "EU", "UK", "CA", "AU"],
+    "audit_certifications": [
+      {
+        "certification": "ESRB_AI_Content_Verification",
+        "issuer": "Entertainment_Software_Rating_Board",
+        "valid_until": "2026-07-01T00:00:00Z"
+      },
+      {
+        "certification": "Virtual_Economy_Standards",
+        "issuer": "Gaming_Industry_Consortium",
+        "valid_until": "2026-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "performance_reputation": {
+    "response_time_p50": 65,
+    "response_time_p95": 180,
+    "availability_sla": 99.8,
+    "throughput_limit": 800,
+    "reputation_score": 4.5,
+    "user_satisfaction": 4.6,
+    "task_success_rate": 92.3,
+    "combat_effectiveness": 4.2,
+    "quest_completion_rate": 88.7,
+    "commerce_reputation_score": 4.7,
+    "transaction_success_rate": 98.1,
+    "payment_processing_speed": 95,
+    "market_efficiency_score": 89.4
+  },
+  "supply_chain": {
+    "component_dependencies": [
+      {
+        "name": "unity_game_engine",
+        "version": "2024.3.0f1",
+        "provider": "Unity_Technologies",
+        "criticality": "high",
+        "last_verified": "2025-07-01T00:00:00Z"
+      },
+      {
+        "name": "multiplayer_networking",
+        "version": "2.4.x",
+        "provider": "[Networking_Provider]",
+        "criticality": "high",
+        "last_verified": "2025-07-01T00:00:00Z"
+      },
+      {
+        "name": "virtual_economy_sdk",
+        "version": "1.5.0",
+        "provider": "[Economy_Provider]",
+        "criticality": "medium",
+        "last_verified": "2025-06-28T00:00:00Z"
+      }
+    ],
+    "software_libraries": [
+      {
+        "name": "game_ai_core",
+        "version": "3.1.0",
+        "license": "Proprietary",
+        "vulnerability_status": "clean"
+      },
+      {
+        "name": "virtual_currency_manager",
+        "version": "2.0.1",
+        "license": "Commercial",
+        "vulnerability_status": "clean"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "source": "game_world_state",
+        "provider": "[Game_Studio]",
+        "update_frequency": "real_time",
+        "reliability_sla": 99.9
+      },
+      {
+        "source": "marketplace_data",
+        "provider": "[Economy_Service]",
+        "update_frequency": "5_minutes",
+        "reliability_sla": 99.5
+      }
+    ],
+    "license_compliance": {
+      "open_source_components": ["JSON.NET", "Newtonsoft.Json"],
+      "proprietary_components": ["Unity_Pro", "GameAI_Core", "Economy_SDK"],
+      "compliance_status": "verified",
+      "last_audit": "2025-06-15T00:00:00Z"
+    }
+  },
+  "verification": {
+    "signatures": [
+      {
+        "authority": "[Game_Studio]",
+        "signature": "base64encodedGameStudioSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["baseline_model", "capabilities", "character_stats"],
+        "timestamp": "2025-07-01T00:00:00Z"
+      },
+      {
+        "authority": "ESRB",
+        "signature": "base64encodedESRBSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["compliance_regulatory"],
+        "timestamp": "2025-06-15T00:00:00Z"
+      },
+      {
+        "authority": "[Platform_Provider]",
+        "signature": "base64encodedPlatformSignature==",
+        "algorithm": "RS256",
+        "verified_sections": ["commerce_capabilities"],
+        "timestamp": "2025-06-20T00:00:00Z"
+      }
+    ],
+    "verification_authorities": [
+      {
+        "name": "[Game_Studio]",
+        "public_key": "-----BEGIN PUBLIC KEY-----[GAME_STUDIO_PUBLIC_KEY]-----END PUBLIC KEY-----",
+        "contact": "verification@[gamestudio].com",
+        "specialization": ["game_mechanics", "character_verification", "virtual_economy"]
+      },
+      {
+        "name": "ESRB",
+        "public_key": "-----BEGIN PUBLIC KEY-----[ESRB_PUBLIC_KEY]-----END PUBLIC KEY-----",
+        "contact": "digital@esrb.org",
+        "specialization": ["content_rating", "age_appropriateness", "gaming_compliance"]
+      },
+      {
+        "name": "[Platform_Provider]",
+        "public_key": "-----BEGIN PUBLIC KEY-----[PLATFORM_PUBLIC_KEY]-----END PUBLIC KEY-----",
+        "contact": "developer@[platform].com",
+        "specialization": ["digital_commerce", "platform_integration", "payment_processing"]
+      }
+    ],
+    "verification_ttl": {
+      "character_stats": "2025-12-31T00:00:00Z",
+      "compliance_regulatory": "2026-06-15T00:00:00Z",
+      "commerce_capabilities": "2025-10-01T00:00:00Z"
+    },
+    "confidence_scores": {
+      "[Game_Studio]": 0.94,
+      "ESRB": 0.98,
+      "[Platform_Provider]": 0.96
+    },
+    "trust_policies": {
+      "minimum_confidence_threshold": 0.90,
+      "required_authorities": ["game_publisher", "content_rater"],
+      "verification_refresh_interval": "quarterly",
+      "commerce_verification_required": true
+    }
+  },
+  "programmability": {
+    "custom_facts": {
+      "character_profile": {
+        "character_class": "[Character_Class]",
+        "character_level": "[Character_Level]",
+        "guild_membership": "[Guild_Name]",
+        "player_owner": "[player_identifier]",
+        "creation_date": "[creation_timestamp]",
+        "play_style": "[combat_preference]",
+        "preferred_equipment": "[equipment_type]",
+        "specializations": ["[skill_1]", "[skill_2]", "[skill_3]"]
+      },
+      "economic_profile": {
+        "current_wealth": {
+          "gold_coins": "[gold_amount]",
+          "silver_pieces": "[silver_amount]"
+        },
+        "spending_preferences": ["[category_1]", "[category_2]"],
+        "trading_reputation": "[reputation_score]",
+        "purchase_history_days": 30,
+        "preferred_vendors": ["[vendor_1]", "[vendor_2]"]
+      },
+      "gameplay_integration": {
+        "combat_ai_level": "advanced",
+        "marketplace_access": "verified_trader",
+        "social_permissions": "limited",
+        "quest_autonomy": "guided"
+      }
+    },
+    "schema_extensions": [
+      "https://[game-studio].com/schemas/rpg-character-v1.json",
+      "https://gaming-standards.org/schemas/virtual-economy-v1.json"
+    ],
+    "schema_version_compatibility": "1.0+",
+    "backward_compatibility": true,
+    "extension_version": "1.0"
+  },
+  "x-gaming-credentials": {
+    "achievements": [
+      {
+        "name": "[Achievement_Name]",
+        "earned_date": "[achievement_date]",
+        "rarity": "[rarity_level]",
+        "verified_by": "[Game_Studio]"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Verified_AI_Trader",
+        "issuer": "[Game_Studio]",
+        "level": "[certification_level]",
+        "expiration": "[expiration_date]"
+      }
+    ],
+    "behavioral_ratings": [
+      {
+        "category": "Fair_Play",
+        "score": "[fairplay_score]",
+        "last_updated": "[rating_date]"
+      },
+      {
+        "category": "Community_Interaction",
+        "score": "[community_score]",
+        "last_updated": "[rating_date]"
+      }
+    ]
+  }
+}
