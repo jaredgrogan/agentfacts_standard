@@ -1,0 +1,88 @@
+{
+  "core_identity": {
+    "agent_id": "",
+    "name": "",
+    "version": "1.0",
+    "created": "",
+    "last_updated": "",
+    "ttl": 3600
+  },
+  "baseline_model": {
+    "foundation_model": "",
+    "model_version": "",
+    "model_provider": "",
+    "model_licensing": "",
+    "training_cutoff_date": "",
+    "training_data_sources": [],
+    "model_capabilities": [],
+    "known_limitations": []
+  },
+  "classification": {
+    "agent_type": "",
+    "operational_level": "",
+    "stakeholder_context": "",
+    "deployment_scope": "",
+    "interaction_mode": "",
+    "risk_classification": ""
+  },
+  "capabilities": {
+    "external_apis": [],
+    "tool_calling": [],
+    "programming_languages": [],
+    "data_formats": [],
+    "interface_types": [],
+    "domain_expertise": [],
+    "language_support": [],
+    "payment_protocols": [],
+    "pricing_models": [],
+    "commerce_capabilities": {}
+  },
+  "authentication_permissions": {
+    "supported_methods": [],
+    "primary_scheme": "",
+    "auth_security_level": "",
+    "current_permissions": [],
+    "permission_scope": [],
+    "permission_ttl": "",
+    "permission_authority": "",
+    "spending_authority": {},
+    "payment_authorization_level": "",
+    "financial_governance": {}
+  },
+  "compliance_regulatory": {
+    "geographic_compliance": [],
+    "safety_classification": "",
+    "audit_certifications": []
+  },
+  "performance_reputation": {
+    "response_time_p50": 0,
+    "response_time_p95": 0,
+    "availability_sla": 0,
+    "throughput_limit": 0,
+    "reputation_score": 0,
+    "user_satisfaction": 0,
+    "commerce_reputation_score": 0,
+    "transaction_success_rate": 0,
+    "payment_processing_speed": 0
+  },
+  "supply_chain": {
+    "component_dependencies": [],
+    "software_libraries": [],
+    "data_dependencies": [],
+    "license_compliance": {}
+  },
+  "verification": {
+    "signatures": [],
+    "verification_authorities": [],
+    "verification_ttl": {},
+    "confidence_scores": {},
+    "trust_policies": {}
+  },
+  "programmability": {
+    "custom_facts": {},
+    "schema_extensions": [],
+    "schema_version_compatibility": "1.0+",
+    "backward_compatibility": true,
+    "extension_version": "1.0"
+  }
+}
